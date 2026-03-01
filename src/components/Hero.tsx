@@ -26,9 +26,8 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <div
-            className={`transition-all duration-700 ${
-              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className={`transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
           >
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-8 glass-card border-indigo-600/30">
@@ -99,9 +98,8 @@ export default function Hero() {
 
           {/* Right: Photo */}
           <div
-            className={`relative flex justify-center transition-all duration-700 delay-200 ${
-              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            }`}
+            className={`relative flex justify-center transition-all duration-700 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              }`}
           >
             <div className="relative">
               {/* Glow behind photo */}
@@ -136,10 +134,10 @@ export default function Hero() {
               </div>
 
               {/* Floating: Projects */}
-              <div className="absolute -right-8 top-6 px-4 py-3 rounded-2xl glass-card animate-float" style={{ animationDelay: "1s" }}>
+              {/* <div className="absolute -right-8 top-6 px-4 py-3 rounded-2xl glass-card animate-float" style={{ animationDelay: "1s" }}>
                 <div className="text-2xl font-extrabold gradient-text">10+</div>
                 <div className="text-xs text-slate-500">projets livrés</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

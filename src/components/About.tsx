@@ -12,7 +12,7 @@ export default function About() {
           <span className="text-xs font-semibold tracking-widest uppercase gradient-text">
             01 — À propos
           </span>
-          <div className="h-px flex-1 bg-white/[0.08]" />
+          <div className="h-px flex-1 bg-white/8" />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -26,7 +26,7 @@ export default function About() {
               {personalInfo.description}
             </p>
             <p className="text-base leading-relaxed mb-10 text-slate-400">
-              Actuellement en Bachelor Développement Web à Digital Campus Paris, j&apos;ai eu l&apos;opportunité de travailler en alternance chez{" "}
+              Diplômé d&apos;un Bachelor Concepteur de Solutions Digitales (RNCP Niveau 6 – Bac+3) à Digital Campus Paris, j&apos;ai eu l&apos;opportunité de travailler en alternance chez{" "}
               <span className="text-slate-100 font-semibold">Kaptcher</span>{" "}
               où j&apos;ai pu participer à des projets ambitieux impliquant React,
               TypeScript et Google Cloud.
@@ -34,7 +34,7 @@ export default function About() {
             <a
               href="/cv-abderrahmane-elkafif.pdf"
               download
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all hover:opacity-90 hover:scale-105 bg-gradient-to-r from-indigo-600 to-cyan-500"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all hover:opacity-90 hover:scale-105 bg-linear-to-r from-indigo-600 to-cyan-500"
             >
               Télécharger mon CV
             </a>

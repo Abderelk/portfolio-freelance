@@ -6,7 +6,7 @@ export const personalInfo = {
   role: "Développeur Full Stack",
   tagline: "Je transforme vos idées en produits numériques soignés — du pixel au serveur.",
   description:
-    "Passionné par la création d\u2019expériences web de qualité, je maîtrise l\u2019ensemble de la chaîne de développement : interfaces React/Next.js soignées, APIs robustes en Node.js, et bases de données MongoDB. Disponible pour des missions freelance et des opportunités en CDI.",
+    "Passionné par la création d'expériences web de qualité, je maîtrise l'ensemble de la chaîne de développement : interfaces React/Next.js soignées, APIs robustes en Node.js, et bases de données MongoDB. Disponible pour des missions freelance et des opportunités en CDI.",
   location: "Paris, France",
   email: "abderrahmanelkafif@gmail.com",
   phone: "06 50 37 75 02",
@@ -50,9 +50,9 @@ export const projects = [
   {
     id: 1,
     title: "SecondLife Exchange",
-    shortDesc: "Plateforme d\u2019échange de seconde main",
+    shortDesc: "Plateforme d'échange de seconde main",
     description:
-      "Application full stack permettant aux utilisateurs d\u2019échanger des objets de seconde main. Authentification JWT, système de messagerie en temps réel, gestion des annonces avec photos.",
+      "Application full stack permettant aux utilisateurs d'échanger des objets de seconde main. Authentification JWT, système de messagerie en temps réel, gestion des annonces avec photos.",
     stack: ["Next.js", "Node.js", "MongoDB", "Tailwind"],
     emoji: "♻️",
     color: "#06b6d4",
@@ -91,11 +91,11 @@ export const projects = [
     title: "Fake News Detector",
     shortDesc: "Chatbot de vérification des faits",
     description:
-      "Chatbot intelligent capable d\u2019analyser et vérifier la véracité d\u2019informations. Utilise des APIs de fact-checking et du NLP pour détecter les fake news en temps réel.",
+      "Chatbot intelligent capable d'analyser et vérifier la véracité d'informations. Utilise des APIs de fact-checking et du NLP pour détecter les fake news en temps réel.",
     stack: ["React", "Node.js", "API REST"],
     emoji: "🔍",
     color: "#ef4444",
-    liveUrl: "",
+    liveUrl: "https://arcom-443222.ew.r.appspot.com/",
     githubUrl: "https://github.com/Abderelk",
     featured: false,
   },
@@ -111,7 +111,7 @@ export const experiences = [
     period: "Sept. 2024 — Oct. 2025",
     current: true,
     description:
-      "Développement de la solution applicative Kaptcher — conception d\u2019interfaces utilisateur, mise en place d\u2019environnements DevOps, rédaction de tests fonctionnels et unitaires, missions CI/CD et déploiement.",
+      "Développement de la solution applicative Kaptcher — conception d'interfaces utilisateur, mise en place d'environnements DevOps, rédaction de tests fonctionnels et unitaires, missions CI/CD et déploiement.",
     stack: ["React", "Node.js", "MongoDB", "Tailwind", "TypeScript", "Google Cloud"],
     color: "#4f46e5",
   },
@@ -121,10 +121,10 @@ export const experiences = [
     company: "Freelance",
     type: "Indépendant",
     location: "Paris",
-    period: "Mars 2024 — Aujourd\u2019hui",
+    period: "Mars 2024 — Aujourd'hui",
     current: true,
     description:
-      "Création de sites vitrines et landing pages sur mesure, développement d\u2019applications web, intégration de maquettes Figma, refonte et optimisation de sites existants.",
+      "Création de sites vitrines et landing pages sur mesure, développement d'applications web, intégration de maquettes Figma, refonte et optimisation de sites existants.",
     stack: ["React", "Node.js", "MongoDB", "Tailwind"],
     color: "#06b6d4",
   },
@@ -137,7 +137,7 @@ export const experiences = [
     period: "Nov. 2023 — Sept. 2024",
     current: false,
     description:
-      "Encadrement d\u2019un atelier de développement web pour enseigner les bases du codage aux collégiens et lycéens.",
+      "Encadrement d'un atelier de développement web pour enseigner les bases du codage aux collégiens et lycéens.",
     stack: ["HTML", "CSS", "JavaScript"],
     color: "#10b981",
   },

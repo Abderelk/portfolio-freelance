@@ -99,9 +99,8 @@ export default function Experience() {
                 {education.map((edu) => (
                   <div key={edu.id} className="relative pl-12">
                     <div
-                      className={`absolute left-0 top-1.5 w-7 h-7 rounded-full border-2 flex items-center justify-center bg-[#080b14] ${
-                        edu.current ? "border-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.4)]" : "border-slate-600"
-                      }`}
+                      className={`absolute left-0 top-1.5 w-7 h-7 rounded-full border-2 flex items-center justify-center bg-[#080b14] ${edu.current ? "border-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.4)]" : "border-slate-600"
+                        }`}
                     >
                       <div className={`w-2.5 h-2.5 rounded-full ${edu.current ? "bg-cyan-400" : "bg-slate-600"}`} />
                     </div>
@@ -128,12 +127,12 @@ export default function Experience() {
             </div>
 
             {/* Recommendation */}
-            <div className="mt-10 p-5 rounded-2xl border border-indigo-600/20 bg-indigo-600/5">
+            {/* <div className="mt-10 p-5 rounded-2xl border border-indigo-600/20 bg-indigo-600/5">
               <p className="text-sm font-semibold mb-1 text-indigo-400">💬 Recommandation</p>
               <p className="text-sm leading-relaxed text-slate-400">
                 En cours d&apos;obtention auprès de mon tuteur d&apos;alternance chez Kaptcher.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

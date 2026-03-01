@@ -1,9 +1,9 @@
-FROM node:20 AS base
-RUN apk update && apk upgrade --no-cache
+FROM node:20-slim AS base
+RUN apt-get update && apt-get upgrade -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # --- Dependencies ---
 FROM base AS deps
-RUN apk add --no-cache libc6-compat
+RUN apt-get update && apt-get install -y --no-install-recommends libc6 && apt-get clean
 WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm ci
@@ -26,8 +26,8 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
+RUN groupadd --system --gid 1001 nodejs
+RUN useradd --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./

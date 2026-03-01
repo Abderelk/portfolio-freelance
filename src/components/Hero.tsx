@@ -18,9 +18,9 @@ export default function Hero() {
       className="relative flex items-center overflow-hidden min-h-screen bg-[#080b14] pt-24 pb-16"
     >
       {/* Glow orbs */}
-      <div className="glow-orb absolute -top-[200px] -right-[150px] w-[700px] h-[700px] bg-indigo-600 opacity-12" />
-      <div className="glow-orb absolute bottom-0 -left-[100px] w-[500px] h-[500px] bg-cyan-500 opacity-[0.08]" />
-      <div className="glow-orb animate-float absolute top-[40%] left-[45%] w-[300px] h-[300px] bg-violet-500 opacity-[0.07]" />
+      <div className="glow-orb absolute -top-50 -right-37.5 w-175 h-175 bg-indigo-600 opacity-12" />
+      <div className="glow-orb absolute bottom-0 -left-25 w-125 h-125 bg-cyan-500 opacity-[0.08]" />
+      <div className="glow-orb animate-float absolute top-[40%] left-[45%] w-75 h-75 bg-violet-500 opacity-[0.07]" />
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -74,7 +74,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:opacity-90 hover:scale-105 hover:shadow-lg bg-gradient-to-r from-indigo-600 to-cyan-500 shadow-[0_8px_32px_rgba(79,70,229,0.3)]"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:opacity-90 hover:scale-105 hover:shadow-lg bg-linear-to-r from-indigo-600 to-cyan-500 shadow-[0_8px_32px_rgba(79,70,229,0.3)]"
               >
                 Voir mes projets
               </a>
@@ -103,10 +103,10 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Glow behind photo */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-600 to-cyan-500 blur-[40px] opacity-30 scale-90" />
+              <div className="absolute inset-0 rounded-3xl bg-linear-to-r from-indigo-600 to-cyan-500 blur-2xl opacity-30 scale-90" />
 
               {/* Photo */}
-              <div className="relative w-72 h-80 rounded-3xl overflow-hidden border-2 border-white/[0.08]">
+              <div className="relative w-72 h-80 rounded-3xl overflow-hidden border-2 border-white/8">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/photo.jpg"
@@ -116,7 +116,7 @@ export default function Hero() {
               </div>
 
               {/* Floating: Stack */}
-              <div className="absolute -left-16 top-8 px-4 py-3 rounded-2xl glass-card animate-float min-w-[140px]">
+              <div className="absolute -left-16 top-8 px-4 py-3 rounded-2xl glass-card animate-float min-w-35">
                 <div className="text-xs mb-1 text-slate-500">Stack principale</div>
                 <div className="flex gap-1.5 flex-wrap">
                   {["React", "Next.js", "Node"].map((t) => (

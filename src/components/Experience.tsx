@@ -6,7 +6,7 @@ import { Briefcase, GraduationCap, MapPin, Calendar } from "lucide-react";
 export default function Experience() {
   return (
     <section id="experience" className="py-28 relative bg-[#080b14]">
-      <div className="glow-orb absolute top-0 -left-[100px] w-[400px] h-[400px] bg-violet-500 opacity-[0.07]" />
+      <div className="glow-orb absolute top-0 -left-25 w-100 h-100 bg-violet-500 opacity-[0.07]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Header */}
@@ -14,7 +14,7 @@ export default function Experience() {
           <span className="text-xs font-semibold tracking-widest uppercase gradient-text">
             04 — Parcours
           </span>
-          <div className="h-px flex-1 bg-white/[0.08]" />
+          <div className="h-px flex-1 bg-white/8" />
         </div>
 
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-16 text-slate-100">
@@ -32,7 +32,7 @@ export default function Experience() {
             </div>
 
             <div className="relative">
-              <div className="absolute left-3.5 top-0 bottom-0 w-px bg-white/[0.08]" />
+              <div className="absolute left-3.5 top-0 bottom-0 w-px bg-white/8" />
 
               <div className="space-y-8">
                 {experiences.map((exp) => (
@@ -93,7 +93,7 @@ export default function Experience() {
             </div>
 
             <div className="relative">
-              <div className="absolute left-3.5 top-0 bottom-0 w-px bg-white/[0.08]" />
+              <div className="absolute left-3.5 top-0 bottom-0 w-px bg-white/8" />
 
               <div className="space-y-6">
                 {education.map((edu) => (

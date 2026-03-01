@@ -1,9 +1,8 @@
 FROM node:20-slim AS base
-RUN apt-get update && apt-get upgrade -y && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends libatomic1 && apt-get upgrade -y && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # --- Dependencies ---
 FROM base AS deps
-RUN apt-get update && apt-get install -y --no-install-recommends libc6 libatomic1 && apt-get clean && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY package.json package-lock.json* ./
 RUN npm ci

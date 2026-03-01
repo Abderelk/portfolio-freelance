@@ -22,6 +22,18 @@ export const metadata: Metadata = {
     "TypeScript",
     "freelance développeur",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon_package_v0.16/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon_package_v0.16/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/favicon_package_v0.16/apple-touch-icon.png",
+    other: [
+      { rel: "mask-icon", url: "/favicon_package_v0.16/safari-pinned-tab.svg" },
+      { rel: "manifest", url: "/favicon_package_v0.16/site.webmanifest" },
+      { rel: "msapplication-TileImage", url: "/favicon_package_v0.16/mstile-150x150.png" },
+    ],
+  },
   authors: [{ name: "Abderrahmane El Kafif" }],
   openGraph: {
     title: "Abderrahmane El Kafif — Développeur Full Stack",

@@ -125,14 +125,6 @@ export default function Experience() {
                 ))}
               </div>
             </div>
-
-            {/* Recommendation */}
-            {/* <div className="mt-10 p-5 rounded-2xl border border-indigo-600/20 bg-indigo-600/5">
-              <p className="text-sm font-semibold mb-1 text-indigo-400">💬 Recommandation</p>
-              <p className="text-sm leading-relaxed text-slate-400">
-                En cours d&apos;obtention auprès de mon tuteur d&apos;alternance chez Kaptcher.
-              </p>
-            </div> */}
           </div>
         </div>
       </div>

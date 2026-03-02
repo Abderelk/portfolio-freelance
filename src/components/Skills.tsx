@@ -63,7 +63,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-28 relative bg-[#080b14]">
       {/* Glow */}
-      <div className="glow-orb absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-indigo-600 opacity-[0.06]" />
+      <div className="glow-orb absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-indigo-600 opacity-[0.06]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Header */}
@@ -71,14 +71,14 @@ export default function Skills() {
           <span className="text-xs font-semibold tracking-widest uppercase gradient-text">
             02 — Compétences
           </span>
-          <div className="h-px flex-1 bg-white/[0.08]" />
+          <div className="h-px flex-1 bg-white/8" />
         </div>
 
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-slate-100">
           Ma <span className="gradient-text">stack technique</span>
         </h2>
         <p className="text-base mb-16 max-w-xl text-slate-400">
-          Des technologies que j&apos;utilise quotidiennement en production.
+          {"Des technologies que j'utilise quotidiennement en production."}
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">

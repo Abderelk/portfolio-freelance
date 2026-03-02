@@ -41,7 +41,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-28 relative bg-[#0d1117]">
-      <div className="glow-orb absolute -bottom-[100px] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-600 opacity-[0.08]" />
+      <div className="glow-orb absolute -bottom-25 left-1/2 -translate-x-1/2 w-125 h-125 bg-indigo-600 opacity-[0.08]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Header */}
@@ -49,15 +49,14 @@ export default function Contact() {
           <span className="text-xs font-semibold tracking-widest uppercase gradient-text">
             05 — Contact
           </span>
-          <div className="h-px flex-1 bg-white/[0.08]" />
+          <div className="h-px flex-1 bg-white/8" />
         </div>
 
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-slate-100">
           Travaillons <span className="gradient-text">ensemble</span>
         </h2>
         <p className="text-base mb-16 max-w-xl text-slate-400">
-          Un projet, une opportunité, une question ? N&apos;hésitez pas à me contacter,
-          je vous réponds rapidement.
+          {"Un projet, une opportunité, une question ? N'hésitez pas à me contacter, je vous réponds rapidement."}
         </p>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -113,7 +112,7 @@ export default function Contact() {
           {/* Right: Form */}
           <div>
             {status === "success" ? (
-              <div className="flex flex-col items-center justify-center h-full min-h-[400px] p-8 rounded-2xl text-center glass-card border-green-400/30">
+              <div className="flex flex-col items-center justify-center h-full min-h-100 p-8 rounded-2xl text-center glass-card border-green-400/30">
                 <CheckCircle size={52} className="mb-4 text-green-400" />
                 <h3 className="text-xl font-bold mb-2 text-slate-100">Message envoyé !</h3>
                 <p className="text-sm text-slate-400">
@@ -121,7 +120,7 @@ export default function Contact() {
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="mt-6 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-cyan-500"
+                  className="mt-6 px-6 py-3 rounded-xl text-sm font-semibold text-white bg-linear-to-r from-indigo-600 to-cyan-500"
                 >
                   Envoyer un autre message
                 </button>
@@ -134,7 +133,7 @@ export default function Contact() {
                     <input
                       type="text" name="name" value={form.name} onChange={handleChange} required
                       placeholder="Votre nom"
-                      className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/[0.03] border border-white/[0.08] text-slate-100 placeholder:text-slate-600 focus:border-indigo-500"
+                      className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/3 border border-white/8 text-slate-100 placeholder:text-slate-600 focus:border-indigo-500"
                     />
                   </div>
                   <div>
@@ -142,7 +141,7 @@ export default function Contact() {
                     <input
                       type="email" name="email" value={form.email} onChange={handleChange} required
                       placeholder="votre@email.com"
-                      className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/[0.03] border border-white/[0.08] text-slate-100 placeholder:text-slate-600 focus:border-indigo-500"
+                      className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/3 border border-white/8 text-slate-100 placeholder:text-slate-600 focus:border-indigo-500"
                     />
                   </div>
                 </div>
@@ -152,7 +151,7 @@ export default function Contact() {
                   <input
                     type="text" name="subject" value={form.subject} onChange={handleChange} required
                     placeholder="Objet de votre message"
-                    className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/[0.03] border border-white/[0.08] text-slate-100 placeholder:text-slate-600 focus:border-indigo-500"
+                    className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/3 border border-white/8 text-slate-100 placeholder:text-slate-600 focus:border-indigo-500"
                   />
                 </div>
 
@@ -161,7 +160,7 @@ export default function Contact() {
                   <textarea
                     name="message" value={form.message} onChange={handleChange} required rows={5}
                     placeholder="Décrivez votre projet ou votre demande..."
-                    className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/[0.03] border border-white/[0.08] text-slate-100 placeholder:text-slate-600 focus:border-indigo-500 resize-none"
+                    className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200 font-medium bg-white/3 border border-white/8 text-slate-100 placeholder:text-slate-600 focus:border-indigo-500 resize-none"
                   />
                 </div>
 
@@ -175,7 +174,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-semibold text-sm text-white transition-all hover:opacity-90 hover:scale-[1.01] disabled:opacity-60 disabled:cursor-not-allowed bg-gradient-to-r from-indigo-600 to-cyan-500"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-semibold text-sm text-white transition-all hover:opacity-90 hover:scale-[1.01] disabled:opacity-60 disabled:cursor-not-allowed bg-linear-to-r from-indigo-600 to-cyan-500"
                 >
                   {status === "loading" ? (
                     <><Loader2 size={16} className="animate-spin" />Envoi en cours...</>

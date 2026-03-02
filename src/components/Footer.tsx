@@ -3,7 +3,7 @@ import { Github, Mail, Heart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="py-10 border-t border-white/[0.08] bg-[#080b14]">
+    <footer className="py-10 border-t border-white/8 bg-[#080b14]">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <span className="text-xl font-extrabold tracking-tight gradient-text">
           {personalInfo.initials}.

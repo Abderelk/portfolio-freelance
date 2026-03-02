@@ -26,10 +26,9 @@ export default function About() {
               {personalInfo.description}
             </p>
             <p className="text-base leading-relaxed mb-10 text-slate-400">
-              Diplômé d&apos;un Bachelor Concepteur de Solutions Digitales (RNCP Niveau 6 – Bac+3) à Digital Campus Paris, j&apos;ai eu l&apos;opportunité de travailler en alternance chez{" "}
+              {"Diplômé d'un Bachelor Concepteur de Solutions Digitales (RNCP Niveau 6 – Bac+3) à Digital Campus Paris, j'ai eu l'opportunité de travailler en alternance chez"}{" "}
               <span className="text-slate-100 font-semibold">Kaptcher</span>{" "}
-              où j&apos;ai pu participer à des projets ambitieux impliquant React,
-              TypeScript et Google Cloud.
+              {"où j'ai pu participer à des projets ambitieux impliquant React, TypeScript et Google Cloud."}
             </p>
             <a
               href="/cv-abderrahmane-elkafif.pdf"
@@ -50,8 +49,7 @@ export default function About() {
                 Développeur Full Stack
               </h3>
               <p className="text-sm leading-relaxed text-slate-400">
-                De la conception UI/UX à l&apos;architecture back-end, je gère l&apos;ensemble
-                du cycle de développement avec React, Next.js, Node.js et MongoDB.
+                {"De la conception UI/UX à l'architecture back-end, je gère l'ensemble du cycle de développement avec React, Next.js, Node.js et MongoDB"}.
               </p>
             </div>
 
@@ -63,8 +61,7 @@ export default function About() {
                 Freelance & Pédagogie
               </h3>
               <p className="text-sm leading-relaxed text-slate-400">
-                Développeur freelance depuis mars 2024, j&apos;ai également animé un atelier
-                de codage pour enseigner le développement web aux collégiens et lycéens.
+                {"Développeur freelance depuis mars 2024, j'ai également animé un atelier de codage pour enseigner le développement web aux collégiens et lycéens."}
               </p>
             </div>
 
@@ -76,8 +73,7 @@ export default function About() {
                 En dehors du code
               </h3>
               <p className="text-sm leading-relaxed text-slate-400">
-                Boxeur anglais en compétition et adepte de la salle de sport —
-                la discipline sportive nourrit ma rigueur dans le développement.
+                {"Compétiteur en boxe anglaise et passionné de sport, j'applique la même exigence dans chaque projet."}
               </p>
             </div>
           </div>

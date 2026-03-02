@@ -130,7 +130,7 @@ export default function Hero() {
               {/* Floating: Experience */}
               <div className="absolute -right-12 bottom-12 px-4 py-3 rounded-2xl glass-card animate-float" style={{ animationDelay: "2s" }}>
                 <div className="text-2xl font-extrabold gradient-text">3+</div>
-                <div className="text-xs text-slate-500">ans d&apos;expérience</div>
+                <div className="text-xs text-slate-500">{"ans d'expérience"}</div>
               </div>
 
               {/* Floating: Projects */}

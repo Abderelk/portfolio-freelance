@@ -26,7 +26,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "py-3 backdrop-blur-xl border-b border-white/[0.08] bg-[#080b14]/85"
+          ? "py-3 backdrop-blur-xl border-b border-white/8 bg-[#080b14]/85"
           : "py-5 bg-transparent border-transparent"
       }`}
     >
@@ -65,7 +65,7 @@ export default function Navbar() {
           <a
             href="/cv-abderrahmane-elkafif.pdf"
             download
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:scale-105 bg-gradient-to-r from-indigo-600 to-cyan-500"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:scale-105 bg-linear-to-r from-indigo-600 to-cyan-500"
           >
             <Download size={14} />
             CV
@@ -83,7 +83,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden px-6 pb-6 pt-2 border-t border-white/[0.08] bg-[#080b14]/95">
+        <div className="md:hidden px-6 pb-6 pt-2 border-t border-white/8 bg-[#080b14]/95">
           <ul className="flex flex-col gap-4 mt-4">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -100,7 +100,7 @@ export default function Navbar() {
           <a
             href="/cv-abderrahmane-elkafif.pdf"
             download
-            className="mt-6 flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 to-cyan-500"
+            className="mt-6 flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold text-white bg-linear-to-r from-indigo-600 to-cyan-500"
           >
             <Download size={14} />
             Télécharger le CV

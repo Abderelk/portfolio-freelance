@@ -9,7 +9,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-28 relative bg-[#0d1117]">
-      <div className="glow-orb absolute bottom-0 -right-[100px] w-[500px] h-[500px] bg-cyan-500 opacity-[0.06]" />
+      <div className="glow-orb absolute bottom-0 -right-25 w-125 h-125 bg-cyan-500 opacity-[0.06]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Header */}
@@ -17,7 +17,7 @@ export default function Projects() {
           <span className="text-xs font-semibold tracking-widest uppercase gradient-text">
             03 — Réalisations
           </span>
-          <div className="h-px flex-1 bg-white/[0.08]" />
+          <div className="h-px flex-1 bg-white/8" />
         </div>
 
         <div className="flex items-end justify-between mb-16">
@@ -37,7 +37,7 @@ export default function Projects() {
         {/* Featured */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {featured.map((project, i) => (
-            <div key={project.id} className="group relative p-8 rounded-3xl glass-card overflow-hidden min-h-[280px]">
+            <div key={project.id} className="group relative p-8 rounded-3xl glass-card overflow-hidden min-h-70">
               <div
                 className="absolute top-0 right-0 w-48 h-48 rounded-full blur-[60px] translate-x-[30%] -translate-y-[30%]"
                 style={{ background: project.color, opacity: 0.08 }}
@@ -108,7 +108,7 @@ export default function Projects() {
           {others.map((project) => (
             <div key={project.id} className="p-6 rounded-2xl glass-card relative overflow-hidden">
               <div
-                className="absolute top-0 right-0 w-32 h-32 rounded-full blur-[40px] translate-x-[30%] -translate-y-[30%]"
+                className="absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl translate-x-[30%] -translate-y-[30%]"
                 style={{ background: project.color, opacity: 0.06 }}
               />
               <div className="flex items-start gap-4 mb-4">
@@ -124,12 +124,39 @@ export default function Projects() {
                 </div>
               </div>
               <p className="text-sm leading-relaxed mb-4 text-slate-400">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.stack.map((tech) => (
                   <span key={tech} className="text-xs px-2.5 py-1 rounded-full" style={{ background: `${project.color}12`, color: project.color }}>
                     {tech}
                   </span>
                 ))}
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-3">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg text-white transition-all hover:opacity-80"
+                    style={{ background: project.color }}
+                  >
+                    <ExternalLink size={12} />
+                    Voir le projet
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg transition-all glass-card text-slate-400"
+                  >
+                    <Github size={12} />
+                    GitHub
+                  </a>
+                )}
               </div>
             </div>
           ))}

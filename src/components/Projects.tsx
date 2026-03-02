@@ -105,12 +105,15 @@ export default function Projects() {
 
         {/* Others */}
         <div className="grid md:grid-cols-2 gap-6">
-          {others.map((project) => (
+          {others.map((project, i) => (
             <div key={project.id} className="p-6 rounded-2xl glass-card relative overflow-hidden">
               <div
                 className="absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl translate-x-[30%] -translate-y-[30%]"
                 style={{ background: project.color, opacity: 0.06 }}
               />
+              <div className="text-xs font-semibold tracking-widest uppercase mb-4 text-slate-500">
+                0{featured.length + i + 1}
+              </div>
               <div className="flex items-start gap-4 mb-4">
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center text-xl shrink-0"
@@ -161,6 +164,9 @@ export default function Projects() {
             </div>
           ))}
         </div>
+        <p className="text-center text-xs text-slate-500 mt-10">
+          {"Les projets sont hébergés sur Google Cloud. La première ouverture peut prendre quelques secondes le temps que le serveur se réveille — merci pour votre patience !"}
+        </p>
       </div>
     </section>
   );

@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Abderrahmane El Kafif — Développeur Full Stack",
     description: "Développeur Full Stack basé à Paris. React, Next.js, Node.js, MongoDB.",
-    url: "https://aek-services.fr",
-    siteName: "AEK Portfolio",
+    url: "https://abderrahmane-elkafif.fr",
+    siteName: "Abderrahmane El Kafif",
     locale: "fr_FR",
     type: "website",
   },

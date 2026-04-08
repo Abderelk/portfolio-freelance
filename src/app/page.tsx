@@ -7,6 +7,8 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+// hello word 
+
 export default function Home() {
   return (
     <main>
